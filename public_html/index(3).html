@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div id="first">
+            <p>Cinepolis Theater 1PM Show</p>
+            <form>
+                <select id="type">
+                    <option value="p">Premium</option>
+                    <option value="c">Gold</option>
+                </select> 
+                <select id="seats">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </form>
+            <br><br>
+            <button id="hide" onclick="store()">proceed</button>
+        </div>
+        
+        
+        <div id="second" hidden>
+            <div id="premium">
+                Premium<br>
+            <input type="button" id="p1" value=" " onclick="fun(1);">
+            <input type="button" id="p2" value=" " onclick="fun(2);">
+            <input type="button" id="p3" value=" " onclick="fun(3);">
+            <input type="button" id="p4" value=" " onclick="fun(4);">
+            <input type="button" id="p5" value=" " onclick="fun(5);">
+            <input type="button" id="p6" value=" " onclick="fun(6);">
+            <input type="button" id="p7" value=" " onclick="fun(7);">
+            <input type="button" id="p8" value=" " onclick="fun(8);">
+            <input type="button" id="p9" value=" " onclick="fun(9);">
+            <input type="button" id="p10" value=" " onclick="fun(10);"><br>
+            <input type="button" id="p11" value=" " onclick="fun(11);">
+            <input type="button" id="p12" value=" " onclick="fun(12);">
+            <input type="button" id="p13" value=" " onclick="fun(13);">
+            <input type="button" id="p14" value=" " onclick="fun(14);">
+            <input type="button" id="p15" value=" " onclick="fun(15);">
+            <input type="button" id="p16" value=" " onclick="fun(16);">
+            <input type="button" id="p17" value=" " onclick="fun(17);">
+            <input type="button" id="p18" value=" " onclick="fun(18);">
+            <input type="button" id="p19" value=" " onclick="fun(19);">
+            <input type="button" id="p20" value=" " onclick="fun(20);">
+            </div>
+            <br>
+            <div id="gold">
+                Gold<br>
+            <input type="button" id="c1" value=" " onclick="fun(1);">
+            <input type="button" id="c2" value=" " onclick="fun(2);">
+            <input type="button" id="c3" value=" " onclick="fun(3);">
+            <input type="button" id="c4" value=" " onclick="fun(4);">
+            <input type="button" id="c5" value=" " onclick="fun(5);">
+            <input type="button" id="c6" value=" " onclick="fun(6);">
+            <input type="button" id="c7" value=" " onclick="fun(7);">
+            <input type="button" id="c8" value=" " onclick="fun(8);">
+            <input type="button" id="c9" value=" " onclick="fun(9);">
+            <input type="button" id="c10" value=" " onclick="fun(10);"><br>
+            <input type="button" id="c11" value=" " onclick="fun(11);">
+            <input type="button" id="c12" value=" " onclick="fun(12);">
+            <input type="button" id="c13" value=" " onclick="fun(13);">
+            <input type="button" id="c14" value=" " onclick="fun(14);">
+            <input type="button" id="c15" value=" " onclick="fun(15);">
+            <input type="button" id="c16" value=" " onclick="fun(16);">
+            <input type="button" id="c17" value=" " onclick="fun(17);">
+            <input type="button" id="c18" value=" " onclick="fun(18);">
+            <input type="button" id="c19" value=" " onclick="fun(19);">
+            <input type="button" id="c20" value=" " onclick="fun(20);">
+            </div>
+            <button id="done" onclick="dis()">done</button>
+            <!input type='checkbox' class='check' value='" + count + "'>
+            <!input type='checkbox' class='check' value='" + count + "'>
+            <!input type='checkbox' class='check' value='" + count + "'>
+        </div>
+        
+    </body>
+</html>
