@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Booking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="newcss.css">
+
+        <script>
+            function ready()
+            {
+                
+                localStorage.setItem("user_name",document.getElementById("name").value);
+                                
+                localStorage.setItem("cinipolis_10_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("cinipolis_10_c", JSON.stringify(new Array(21).fill(0)));
+                localStorage.setItem("sandhya_10_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("sandhya_10_c", JSON.stringify(new Array(21).fill(0)));
+                localStorage.setItem("pvr_10_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("pvr_10_c", JSON.stringify(new Array(21).fill(0)));
+                
+                localStorage.setItem("cinipolis_1_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("cinipolis_1_c", JSON.stringify(new Array(21).fill(0)));
+                localStorage.setItem("sandhya_1_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("sandhya_1_c", JSON.stringify(new Array(21).fill(0)));
+                localStorage.setItem("pvr_1_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("pvr_1_c", JSON.stringify(new Array(21).fill(0)));
+                
+                
+                localStorage.setItem("cinipolis_4_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("cinipolis_4_c", JSON.stringify(new Array(21).fill(0)));
+                localStorage.setItem("sandhya_4_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("sandhya_4_c", JSON.stringify(new Array(21).fill(0)));
+                localStorage.setItem("pvr_4_p", JSON.stringify(new Array(51).fill(0)));
+                localStorage.setItem("pvr_4_c", JSON.stringify(new Array(21).fill(0)));
+                window.location.assign("main.html");
+                
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input id="name" placeholder="please enter your name">
+        <br><br>
+        <input type="email" id="e-mail" placeholder="please enter your E-Mail">
+        <br><br>
+        <input id="phone" placeholder="please enter your Phone Number">
+        <br>
+        <br>
+        <br>
+        <button onclick="ready()" class="btn btn-primary" style="float:left">Book a movie</button>
+        
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+            <link rel="stylesheet" href="newcss.css">
+
+    <script>
+        function booking()
+        {
+            localStorage.setItem("theater",document.getElementById("theater").value);
+            localStorage.setItem("time",document.getElementById("time").value);
+            window.location.assign("Booking.html");
+        }
+    </script>
+</head>
+<body>
+    <div id="menu"> 
+<form>
+    <select id="theater">
+        <option value="sandhya">Sandhya</option>
+        <option value="pvr">PVR</option>
+        <option value="cinipolis">Cinepolis</option>
+    </select>
+    <select id="time">
+        <option value="10">10:00 AM</option>
+        <option value="1">1:00 PM</option>
+        <option value="4">4:00 PM</option>
+     </select>
+
+</form>
+        <br><br>
+        <button onclick="booking();" class="btn btn-primary">proceed</button>
+
+ </div>
+ 
+
+</body>
+</html>

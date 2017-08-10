@@ -1,0 +1,68 @@
+.but{
+    
+    background-color:white;
+    border: 1px solid greenyellow;
+    min-width: 2em;
+    border-radius: 1em;
+    
+}
+.but:hover{
+    background-color:#5cd65c;
+    cursor: pointer;
+   
+}
+
+.btn {
+  font-family: "Lato", Arial, sans-serif;
+  height: 2em;
+  border-radius: 1em;
+  font-size: 0.875em;
+  line-height: 0.75em;
+  padding: 0 1.5em;
+  min-width: 5em;
+  cursor: pointer;
+  border: 1px solid transparent; }
+
+/*Primary button styling*/
+.btn-primary {
+  background-color: #0072aa;
+  color: #ffffff; }
+
+/*Primary button in focus state styling*/
+.btn-primary:focus {
+  outline: 1px dotted #333;
+  outline-offset: 2px; }
+
+/*Primary button in hover state styling*/
+.btn-primary:hover {
+  background-color: #004b71; }
+
+/*Primary button in active state styling*/
+.btn-primary:active {
+  background-color: #0072aa; }
+/* Secondary button styling*/
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0072aa;
+  border-color: #0072aa; }
+
+/* Secondary button in focus state styling*/
+.btn-secondary:focus {
+  outline: 1px dotted #333;
+  outline-offset: 2px; }
+
+/* Secondary button in hover state styling*/
+.btn-secondary:hover {
+  border: 1px solid #004b71;
+  color: #004b71;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #004b71;
+  -moz-box-shadow: inset 0px 0px 0px 1px #004b71;
+  box-shadow: inset 0px 0px 0px 1px #004b71; }
+
+/* Secondary button in active state styling*/
+.btn-secondary:active {
+  color: #0072aa;
+  border-color: #0072aa;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
