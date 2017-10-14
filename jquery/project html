@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".sub").click(function(){
+                    var temp=this.id;
+                    for(var i=1;i<5;i++)
+                    {
+                        if("list"+i==temp)
+                        {
+                           $("#list"+i).addClass("highlight");
+                        }
+                        else
+                            $("#list"+i).removeClass("highlight");
+                    }
+            
+            });
+            $(".defaultimg").click(function(){
+                var temp=this.id;
+                for(var i=1;i<5;i++)
+                {
+                    if("default"+i==temp)
+                    {
+                        $(".para"+i).show();
+                    }
+                    else
+                        $(".para"+i).hide();
+                }
+            })
+                    
+        });
+            
+            </script>
+<style>
+    .nav .sub{
+        display: inline;
+        line-height: 30px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        /*border-bottom: 2px solid white;*/
+
+    }
+    
+    .highlight{
+        border-bottom: 2px solid white;
+    }
+    .menu{
+        text-align: center;
+        background-color: #669999;
+    }
+    .para{
+        display: inline-block;
+        width: 75%;
+        /*position: absolute;*/
+        text-align: justify;
+    }
+    .img{
+        float: right;
+        display: inline;
+        position: relative;
+        height: 30%;
+        width: 20%;
+    }
+    .para1,
+    .para2,.para3,.para4{
+        display: none;
+        margin-bottom: 20px;
+    }
+    .defaultimg{
+        height: 30em;
+        width: 20em;
+        display: inline;
+        padding: 20px;
+        border: 1px solid black;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .defaultimg:hover{
+        height: 31em;
+        width: 21em;
+        opacity: 1;
+        
+       
+    }
+    .img{
+        height: 30em;
+        width: 20em;
+    }
+    .default p{
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        display: none;
+    }
+    td,th{
+        padding-right: 30px;
+        color:  grey;
+        cursor: pointer;
+    }
+    td:hover{
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    .parafirst{
+        text-align: justify;
+    }
+    th{
+        padding-bottom: 20px;
+        padding-left: 0;
+        color: white;
+    }
+    .footer{
+        background-color: black;
+        height: 300px;
+        /*text-align: center;*/
+    }
+    table{
+        padding-left: 100px;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="menu">
+    <ul class="nav">
+        <li id="list1" class="sub"><b>The Flight </b></li>
+        <li class="sub"> | </li>
+        <li id="list2" class="sub"><b>The City </b></li>
+        <li class="sub"> | </li>
+        <li id="list3" class="sub"><b>The Island </b></li>
+        <li class="sub"> | </li>
+        <li id="list4" class="sub"><b>The Food </b></li>
+  </ul>
+</div>
+    <div class="para1">
+        <h2 >Washington: </h2>
+        <p class="parafirst ">
+            Flight is a 2012 American drama film directed by 
+Robert Zemeckis. The film stars Denzel Washington as William "Whip" Whitaker Sr.
+, an airline pilot who miraculously crash-lands his plane after it suffers an in-flight mechanical
+ failure, saving nearly everyone on board. Immediately following the crash, he is hailed a hero, 
+but an investigation soon leads to questions that put the captain in a different light.
+Flight was the first live action film directed by Robert Zemeckis since Cast Away and What Lies 
+Beneath, both released in 2000, and his first R-rated film since Used Cars in 1980. It was also a 
+box office success, grossing over $161 million worldwide and received mostly positive reviews. The 
+film was nominated twice at the 85th Academy Awards, for Best Actor (Denzel Washington) and Best Original
+ Screenplay (John Gatins).
+        </p>
+        <h2>Flights :</h2>
+        <p class="para">
+            Airline pilot captain William "Whip" Whitaker Sr. uses cocaine to wake up after a night of little 
+            sleep in his Orlando hotel room. He pilots SouthJet Flight 227 to Atlanta which experiences severe 
+            turbulence at takeoff. Copilot Ken Evans takes over while Whip discreetly mixes vodka in his orange
+            juice and takes a nap. He is jolted awake as the plane goes into a steep dive. Unable to regain control,
+            Whip is forced to make a controlled crash landing in an open field losing consciousness on impact.
+Meanwhile, heroin addict Nicole Maggen is on the verge of being evicted. She overdoses on heroin and has to be wheeled 
+out of the house by a paramedic. SouthJet Flight 227 flies inverted overhead in the midst of its emergency landing.
+Whip awakens in an Atlanta hospital with moderate injuries and is greeted by his old friend Charlie Anderson, who represents 
+the airline's pilots union. He tells Whip that he managed to save 96 out of 102, losing two crew members and four passengers,
+but mentions his copilot is in a coma. Whip sneaks away for a cigarette in the stairwell and meets Nicole, who is recovering 
+from a heroin overdose in the same hospital. The next morning, his friend and drug dealer Harling Mays picks him up from the hospital.
+Having retired to his late father's farm, he meets Charlie and attorney Hugh Lang, who explain that the National Transportation 
+Safety Board (NTSB) performed a drug test while he was unconscious. Results showed that Whip was intoxicated during the flight. 
+Hugh promises to get the toxicology report voided on technical grounds. Meanwhile, Whip visits and soon becomes intimate with 
+Nicole, but Whip's drinking habits clash with Nicole's attempts to stay drug-free. Later at a crew member's funeral, he attempts
+to persuade a flight attendant who survived to tell the NTSB that he was sober.
+Whip pays a visit to his co-pilot Ken Evans after he awakens from his coma. Evans has likely lost much of his ability to walk 
+and may never pilot an airplane again. Although upset, Evans has no intention of telling the NTSB that Whip was drinking. Nicole 
+decides to separate from Whip, following his failed attempts to stay sober. Hounding Whip, the media catches him drunk after he 
+spontaneously drives to the home of his ex-wife and son, both of whom resent him. He stays with Charlie until the NTSB hearing, 
+vowing not to drink. The night before the hearing, Charlie and Hugh move Whip to a guarded hotel room with no alcohol. Although 
+his minibar is empty, he finds the door to an adjacent room unlocked and raids its minibar instead.
+Whip is discovered by Charlie the next morning, passed out and still drunk. Harling is called, who revives him with cocaine. 
+At the hearing, lead NTSB investigator Ellen Block explains that a damaged elevator assembly jackscrew was the primary cause 
+of the crash. She commends Whip on his valor and skill and notes that no other pilot was able to land the plane in trial 
+simulations of the crash. She then reveals that two empty vodka bottles were found in the plane's trash, despite the fact
+that beverages had not been served to passengers, and that Whip's test was excluded for technical reasons. The only other 
+member of the crew to test positive for alcohol was Trina, who died in the crash, and with whom Whip had spent the night 
+before. Whip, unable to bring himself to blame Trina for his actions, admits to being intoxicated the day of the crash.
+Thirteen months later, an imprisoned Whip tells a support group of fellow inmates that he's glad to be sober and doesn't 
+regret doing the right thing. Whip is seen looking at pictures of Nicole, family, and friends on the wall of his cell, 
+along with greeting cards congratulating him on being sober for a year. He is working to rebuild his relationship with 
+his son, who visits to talk with him about a college application essay on "the most fascinating person that I've never met." 
+His son begins by asking, "Who are you?" As a plane flies overhead, Whip replies, "That's a good question."
+        </p>
+        <img class="img" src="flightfilm.jpg">
+    </div>
+    <div class="para2">
+        <h2>Washington: </h2>
+        <p class="parafirst ">
+            Historically city-dwellers have been a small proportion of humanity overall, but today, following 
+            two centuries of unprecedented and rapid urbanization, half of 
+            the world population is said to live in cities. This has profound
+            consequences for global sustainability.[6] Present-day cities 
+            usually form the core of larger metropolitan areas and urban 
+            areas - creating numerous commuters traveling towards city 
+            centers for employment, entertainment, and edification. However, 
+            in a world of intensifying globalization, all cities are in
+            different degree also connected globally beyond these regions.
+        </p>
+        <h2>Nation :</h2>
+        <p class="para">
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.[17] According to the "functional definition" a city 
+is not distinguished by size alone, but also by the role it 
+plays within a larger political context. Cities serve as 
+administrative, commercial, religious, and cultural hubs for 
+their larger surrounding areas.[18][19]
+The presence of a literate elite is sometimes included in 
+the definition.[20] A typical city has professional 
+administrators, regulations, and some form of taxation 
+(food and other necessities or means to trade for them) 
+to feed the government workers. (This arrangement contrasts 
+with the more typically horizontal relationships in a tribe or 
+village accomplishing common goals through informal agreements 
+between neighbors, or through leadership of a chief.) The 
+governments may be based on heredity, religion, military power,
+work projects such as canal building, food distribution, land 
+ownership, agriculture, commerce, manufacturing, finance, or a 
+combination of these. Societies that live in cities are often 
+called civilizations.
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.[17] According to the "functional definition" a city 
+is not distinguished by size alone, but also by the role it 
+plays within a larger political context. Cities serve as 
+administrative, commercial, religious, and cultural hubs for 
+their larger surrounding areas.[18][19]
+The presence of a literate elite is sometimes included in 
+the definition.[20] A typical city has professional 
+administrators, regulations, and some form of taxation 
+(food and other necessities or means to trade for them) 
+to feed the government workers. (This arrangement contrasts 
+with the more typically horizontal relationships in a tribe or 
+village accomplishing common goals through informal agreements 
+between neighbors, or through leadership of a chief.) The 
+governments may be based on heredity, religion, military power,
+work projects such as canal building, food distribution, land 
+ownership, agriculture, commerce, manufacturing, finance, or a 
+combination of these. Societies that live in cities are often 
+called civilizations.
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.
+        </p>
+        <img class="img" src="cityimg.jpg">
+    </div>
+    <div class="para3">
+        <h2>Mauritius : </h2>
+        <p class="parafirst ">
+            Historically city-dwellers have been a small proportion of humanity overall, but today, following 
+            two centuries of unprecedented and rapid urbanization, half of 
+            the world population is said to live in cities. This has profound
+            consequences for global sustainability.[6] Present-day cities 
+            usually form the core of larger metropolitan areas and urban 
+            areas - creating numerous commuters traveling towards city 
+            centers for employment, entertainment, and edification. However, 
+            in a world of intensifying globalization, all cities are in
+            different degree also connected globally beyond these regions.
+        </p>
+        <h2>Nature :</h2>
+        <p class="para">
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.[17] According to the "functional definition" a city 
+is not distinguished by size alone, but also by the role it 
+plays within a larger political context. Cities serve as 
+administrative, commercial, religious, and cultural hubs for 
+their larger surrounding areas.[18][19]
+The presence of a literate elite is sometimes included in 
+the definition.[20] A typical city has professional 
+administrators, regulations, and some form of taxation 
+(food and other necessities or means to trade for them) 
+to feed the government workers. (This arrangement contrasts 
+with the more typically horizontal relationships in a tribe or 
+village accomplishing common goals through informal agreements 
+between neighbors, or through leadership of a chief.) The 
+governments may be based on heredity, religion, military power,
+work projects such as canal building, food distribution, land 
+ownership, agriculture, commerce, manufacturing, finance, or a 
+combination of these. Societies that live in cities are often 
+called civilizations.
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.[17] According to the "functional definition" a city 
+is not distinguished by size alone, but also by the role it 
+plays within a larger political context. Cities serve as 
+administrative, commercial, religious, and cultural hubs for 
+their larger surrounding areas.[18][19]
+The presence of a literate elite is sometimes included in 
+the definition.[20] A typical city has professional 
+administrators, regulations, and some form of taxation 
+(food and other necessities or means to trade for them) 
+to feed the government workers. (This arrangement contrasts 
+with the more typically horizontal relationships in a tribe or 
+village accomplishing common goals through informal agreements 
+between neighbors, or through leadership of a chief.) The 
+governments may be based on heredity, religion, military power,
+work projects such as canal building, food distribution, land 
+ownership, agriculture, commerce, manufacturing, finance, or a 
+combination of these. Societies that live in cities are often 
+called civilizations.
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.
+        </p>
+        <img class="img" src="islandimg.jpg">
+    </div>
+    <div class="para4">
+        <h2>Food : </h2>
+        <p class="parafirst ">
+            Historically city-dwellers have been a small proportion of humanity overall, but today, following 
+            two centuries of unprecedented and rapid urbanization, half of 
+            the world population is said to live in cities. This has profound
+            consequences for global sustainability.[6] Present-day cities 
+            usually form the core of larger metropolitan areas and urban 
+            areas - creating numerous commuters traveling towards city 
+            centers for employment, entertainment, and edification. However, 
+            in a world of intensifying globalization, all cities are in
+            different degree also connected globally beyond these regions.
+        </p>
+        <h2>Recipe :</h2>
+        <p class="para">
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.[17] According to the "functional definition" a city 
+is not distinguished by size alone, but also by the role it 
+plays within a larger political context. Cities serve as 
+administrative, commercial, religious, and cultural hubs for 
+their larger surrounding areas.[18][19]
+The presence of a literate elite is sometimes included in 
+the definition.[20] A typical city has professional 
+administrators, regulations, and some form of taxation 
+(food and other necessities or means to trade for them) 
+to feed the government workers. (This arrangement contrasts 
+with the more typically horizontal relationships in a tribe or 
+village accomplishing common goals through informal agreements 
+between neighbors, or through leadership of a chief.) The 
+governments may be based on heredity, religion, military power,
+work projects such as canal building, food distribution, land 
+ownership, agriculture, commerce, manufacturing, finance, or a 
+combination of these. Societies that live in cities are often 
+called civilizations.
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.[17] According to the "functional definition" a city 
+is not distinguished by size alone, but also by the role it 
+plays within a larger political context. Cities serve as 
+administrative, commercial, religious, and cultural hubs for 
+their larger surrounding areas.[18][19]
+The presence of a literate elite is sometimes included in 
+the definition.[20] A typical city has professional 
+administrators, regulations, and some form of taxation 
+(food and other necessities or means to trade for them) 
+to feed the government workers. (This arrangement contrasts 
+with the more typically horizontal relationships in a tribe or 
+village accomplishing common goals through informal agreements 
+between neighbors, or through leadership of a chief.) The 
+governments may be based on heredity, religion, military power,
+work projects such as canal building, food distribution, land 
+ownership, agriculture, commerce, manufacturing, finance, or a 
+combination of these. Societies that live in cities are often 
+called civilizations.
+            A city is distinguished from other human settlements by its relatively
+            great size, but also by its functions and its special symbolic
+            status, which may be conferred by a central authority. The term
+            can also refer either to the physical streets and buildings of 
+            the city or to the collection of people who dwell there, and can
+            be used in a general sense to mean urban rather than rural 
+            territory.[13][14]
+A variety of definitions, invoking population, population 
+density, number 
+of dwellings, economic function, and infrastructure, are used 
+in national censuses to classify populations as urban. Common 
+population definitions for a city range between 1,500 and 50,000 
+people, with most states using a minimum between 1,500 and 5000 
+inhabitants.[15][16] However, some jurisdictions set no such 
+minimums.
+        </p>
+        <img class="img" src="food.jpg">
+    </div>
+    <div class="default">
+        <p>The Flight</p>
+        <img class="defaultimg" id="default1" src="flightfilm.jpg">
+        <p>The City</p>
+        <img class="defaultimg" id="default2" src="city.jpg">
+        <p>The Island</p>
+        <img class="defaultimg" id="default3" src="island.jpg">
+        <p>The Food</p>
+        <img class="defaultimg" id="default4" src="food.jpg">
+        
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Company</th>
+                <th>Learn More</th>
+            </tr>
+            <tr>
+                <td>Business</td>
+                <td>About Us</td>
+                <td>Support</td>
+            </tr>
+            <tr>
+                <td>Compare</td>
+                <td>Blog</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Features</td>
+                <td>News</td>
+                <td>Referral Program</td>
+            </tr>
+            <tr>
+                <td>Pricing</td>
+                <td>Press Releases</td>
+                <td>Affiliate Program</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>Jobs</td>
+                <td>Reseller Program</td>
+            </tr>
+            <tr>
+                <td>App Showcase</td>
+                <td>Contact Us</td>
+                <td>Folder Sharing FAQ</td>
+            </tr>
+        </table>
+        <table class="socialmedia">
+            <tr>
+                <th>Social Media
+                </th>
+            </tr>
+            <tr>
+                <td><img src="facebook.png"> Facebook</td>
+                <td><img src="blogger.png"> Blogger</td>
+            </tr>
+            <tr>
+                <td><img src="dupral-32.png"> Dupral</td>
+                <td><img src="google-plus.png"> Google+</td>
+            </tr>
+            
+            <tr>
+                <td><img src="twitter-32.png"> Twitter</td>
+                <td><img src="youtube.png"> Youtube</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
