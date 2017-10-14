@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu>li").addClass("menuhighlight");
+                $(".submenu>li").addClass("sublisthighlight");
+                $(".menulist").click(function(){
+                    var temp=this.id;
+                    
+                    
+                    for(var i=1;i<5;i++)
+                    {
+                        if(i==temp)
+                        {
+                            $("#"+"submenu"+i).toggle();
+                        }
+                        else
+                            $("#submenu"+i).hide();
+                    }
+                })
+                
+            })
+            </script>
+            <style>
+                .icon
+                {
+                    height: 1em;
+                    width: 1em;
+                }
+                
+                .menu{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: #f1f1f1;
+                }
+                .submenu{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: #f1f1f1;
+                    display: none;
+                }
+                
+                .menuhighlight{
+                    cursor: pointer;
+                    line-height: 2em;
+                    color: black;
+                }
+                .sublisthighlight
+                {
+                    cursor: pointer;
+                    line-height: 2em;
+                    color: black;
+                    
+                }
+                .sublisthighlight:hover{
+                    background-color: #555;
+                    color: white;
+                }
+                menu>li a {
+                        display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                    }
+                    
+                    .menulist{
+                        display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                    }
+                    .menulist:hover 
+                    {
+                        background-color: #555;
+                        color: white;
+                    }
+                    
+                
+            </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul class="menu">
+                <li class="menulist" id="1"> menu</li>
+                <ul class="submenu" id="submenu1">
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a></li>
+                </ul>
+                <li class="menulist" id="2"> menu1</li>
+                <ul class="submenu" id="submenu2">
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a>u</li>
+                </ul>
+                <li class="menulist" id="3"> menu2</li>
+                <ul class="submenu" id="submenu3">
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a></li>
+                </ul>
+                <li class="menulist" id="4"> menu3</li>
+                <ul class="submenu" id="submenu4">
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a></li>
+                    <li> <a>sub-menu</a></li>
+                </ul>
+            </ul>
+        </div>
+    </body>
+</html>
