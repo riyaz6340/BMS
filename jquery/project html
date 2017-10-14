@@ -26,6 +26,7 @@
                     if("default"+i==temp)
                     {
                         $(".para"+i).show();
+                        location.href="#bhoom";
                     }
                     else
                         $(".para"+i).hide();
@@ -124,9 +125,9 @@
 </style>
 </head>
 <body>
+    <title>Registration</title>
 
-
-<div class="menu">
+<div class="menu" id="bhoom">
     <ul class="nav">
         <li id="list1" class="sub"><b>The Flight </b></li>
         <li class="sub"> | </li>
@@ -137,7 +138,7 @@
         <li id="list4" class="sub"><b>The Food </b></li>
   </ul>
 </div>
-    <div class="para1">
+    <div class="para1" >
         <h2 >Washington: </h2>
         <p class="parafirst ">
             Flight is a 2012 American drama film directed by 
@@ -483,7 +484,7 @@ minimums.
     </div>
     <div class="default">
         <p>The Flight</p>
-        <img class="defaultimg" id="default1" src="flightfilm.jpg">
+        <img class="defaultimg"  id="default1" src="flightfilm.jpg">
         <p>The City</p>
         <img class="defaultimg" id="default2" src="city.jpg">
         <p>The Island</p>
