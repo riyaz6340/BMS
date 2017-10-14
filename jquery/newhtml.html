@@ -10,51 +10,35 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
         <script>
             $(document).ready(function(){
-                $("#im1").html("<img id='img1' class='loading' src='im1.png'/>");
-                    $("#im2").html("<img id='img2' class='loading' src='im2.png'/>");
-                    $("#im3").html("<img id='img3' class='loading' src='im3.png'/>");
                 $("#riyaz").click(function(){
-                    $(".test").hide();
-                    $(this).hide();
-                    $("#riyaz1").show();
-                    $(".loading").show();
-                    
-//                    $("#im1").html("<img id='img1' class='loading' src='im1.png'/>");
-//                    $("#im2").html("<img id='img2' class='loading' src='im2.png'/>");
-//                    $("#im3").html("<img id='img3' class='loading' src='im3.png'/>");
-                    
+                    myfunction();
                 });
-                $("#im1").click(function(){
-                    $("#im2").hide();
-                    $("#im3").hide();
-                    $("#para").show();
-                    
-                });
-                $("#im2").click(function(){
-                    $("#im1").hide();
-                    $("#im3").hide();
-                    $("#para").show();
-                });
-                $("#im3").click(function(){
-                    $("#im2").hide();
-                    $("#im1").hide();
-                    $("#para").show();
-                });
-                $(".loading").click(function(){
-                   
-                });
-                $("#riyaz1").click(function(){
-                    
-                    $(".test").show();
-                    $(this).hide();
-                    $("#riyaz").show();
-                    $(".yo").hide();
+                function myfunction()
+                {
+                    $("#1").html("<img id='img1' class='loading' src='im1.png'/>");
+                    $("#2").html("<img id='img2' class='loading' src='im2.png'/>");
+                    $("#3").html("<img id='img3' class='loading' src='im3.png'/>");
+
+                }
+                $(".yo").click(function(){
+                    var temp=this.id;
+                    for(var i=1;i<4;i++)
+                    {
+                        if(temp!=i)
+                        {
+                            $("#"+i).hide();
+                        }
+                        else
+                            $("#para"+i).show();
+
+                    }
                     
                 });
-               
-            });
+    });
             </script>
             <style>
                 .loading{
@@ -66,25 +50,25 @@ and open the template in the editor.
                 }
                 .yo{
                     display: inline;
-                        }
-                        #para{
-                            display: inline-block;
-                            background-color: lightblue;
-                            position: absolute;
-                            height: 200px;
-                        }
+                    }
+                #para{
+                    display: inline-block;
+                    background-color: lightblue;
+                    position: absolute;
+                    height: 200px;
+                }
                     
             </style>
     </head>
     <body>
-        <button id="riyaz" style="display:block">Load</button>
-        <button id="riyaz1" style="display:none">reset</button>
+        <button id="riyaz" class="btn" style="display:block">Load</button>
+        <!--<button id="riyaz1" style="display:none">reset</button>-->
         <br> 
         <p class="test">Press Load Button To Load Images Using JQuery</p>
         <div class="container">
-        <div id="im1" class="yo"></div>
-        <div id="im2" class="yo"></div>
-        <div id="im3" class="yo"></div>
+        <div id="1" class="yo"></div>
+        <div id="2" class="yo"></div>
+        <div id="3" class="yo"></div>
     </div>
         <pre id="para1" style="display: none">
             this is some text1
