@@ -13,9 +13,14 @@
                         if("list"+i==temp)
                         {
                            $("#list"+i).addClass("highlight");
+                           $(".para"+i).show();
                         }
                         else
+                        {
                             $("#list"+i).removeClass("highlight");
+                            $(".para"+i).hide();
+                        }
+                            
                     }
             
             });
@@ -25,11 +30,15 @@
                 {
                     if("default"+i==temp)
                     {
+                        $("#list"+i).addClass("highlight");
                         $(".para"+i).show();
                         location.href="#bhoom";
                     }
                     else
+                    {
                         $(".para"+i).hide();
+                        $("#list"+i).removeClass("highlight");
+                    }
                 }
             })
                     
@@ -121,6 +130,9 @@
     }
     table{
         padding-left: 100px;
+    }
+    .footertabels{
+        display: inline-block;
     }
 </style>
 </head>
@@ -215,7 +227,7 @@ His son begins by asking, "Who are you?" As a plane flies overhead, Whip replies
             territory.[13][14]
 A variety of definitions, invoking population, population 
 density, number 
-of dwellings, economic function, and infrastructure, are used 
+of dwellings, economic function , and infrastructure, are used 
 in national censuses to classify populations as urban. Common 
 population definitions for a city range between 1,500 and 50,000 
 people, with most states using a minimum between 1,500 and 5000 
@@ -494,7 +506,7 @@ minimums.
         
     </div>
     <div class="footer">
-        <table>
+        <table class="footertabels">
             <tr>
                 <th>Product</th>
                 <th>Company</th>
@@ -531,7 +543,7 @@ minimums.
                 <td>Folder Sharing FAQ</td>
             </tr>
         </table>
-        <table class="socialmedia">
+        <table class="footertabels socialmedia">
             <tr>
                 <th>Social Media
                 </th>
