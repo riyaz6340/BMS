@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="design.css" rel="stylesheet" type="text/css">
+        <style>
+            .photo{
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                
+            }
+            .photo:hover{
+                opacity: 1;
+            }
+            div{
+                width: 50%;
+                border: none;
+                display: grid;
+            }
+            span{
+                width: 50%;
+                border: none;
+                display: grid;
+            }
+            *{
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <span>
+        <img class="photo" src="images/big-sur-pfiffer-cave-light.jpg">
+        </span>
+        <span>
+        <img class="photo" src="images/centered-san-francisco.jpg">
+        </span>
+        <div>
+        <img class="photo" src="images/china-zhangjiaji-sunset-walls.jpg">
+        </div>
+        <div>
+        <img class="photo" src="images/foggy-sunset-mt-tam.jpg"> 
+        </div>
+        <div>
+        <img class="photo" src="images/guilin-rice-terraces.jpg">
+        </div>
+        <div>
+        <img class="photo" src="images/mojave-cave-lights.jpg"> 
+        </div>
+        <div>
+        <img class="photo" src="images/running-to-the-sun-sutro-tower.jpg">
+        </div>
+        <div>
+        <img class="photo" src="images/san-francisco-ferry-building.jpg">   
+        </div>
+        <div>
+        <img class="photo" src="images/slot-canyon-swirls.jpg">
+        </div>
+        <div>
+        <img class="photo" src="images/sunset-hills.jpg"> 
+        </div>
+    </body>
+</html>
