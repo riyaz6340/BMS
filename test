@@ -69,3 +69,72 @@ and open the template in the editor.
         </div>
     </body>
 </html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="design.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/joshua-sortino-signature.svg">
+                </a>
+            </div>
+            <div class="header-container">
+                <ul class="links">
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">PHOTOGRAPHY</a></li>
+                    <li><a href="#">WRITING</a></li>
+                    <li><a href="#">SPEAKING</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="ob1">
+            <a><img src="images/bff-logo-long_1.svg"></a>
+        </div>
+        <div class="ob2">
+            <a><img src="images/bulan-logotext.svg"></a>
+        </div>
+        <div class="ob2">
+            <a><img src="images/marker-app-logotext.svg"></a>
+        </div>
+        <div class="ob2">
+            <a><img src="images/everdwell-logotext.svg"></a>
+        </div>
+        <div class="ob2">
+            <a><img src="images/webdesigner-depot-logotext.svg"></a>
+        </div>
+        <div class="ob1">
+            <a><img src="images/teespring-brandmark.svg"></a>
+        </div>
+        <div class="ob1">
+            <a><img src="images/disqus-logotext.svg"></a>
+        </div>
+        <div class="ob1">
+            <a><img src="images/bento-logo.svg"></a>
+        </div>
+        <div class="ob1">
+            <a><img src="images/instacart-logotext.svg"></a>
+        </div><div class="ob2">
+            <a><img src="images/vida-mobile-logotext.svg"></a>
+        </div>
+        <div class="ob2">
+            <a><img src="images/bff-logo-long_1.svg"></a>
+        </div>
+        
+    </body>
+</html>
